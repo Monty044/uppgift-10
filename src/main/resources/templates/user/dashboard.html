@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Välkommen till din dashboard</h2>
+    <div>
+        <p>Du är inloggad som: <span th:text="${#authentication.name}"></span></p>
+        <p>Din roll är: <span th:text="${#authentication.authorities}"></span></p>
+    </div>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Logga ut"/>
+    </form>
+</body>
+</html> 

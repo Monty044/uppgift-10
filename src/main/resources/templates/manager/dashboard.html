@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Manager Dashboard</title>
+</head>
+<body>
+    <h2>Manager Dashboard</h2>
+    <div sec:authorize="isAuthenticated()">
+        Inloggad som: <span th:text="${#authentication.name}"></span>
+        <form th:action="@{/logout}" method="post" style="display: inline;">
+            <input type="submit" value="Logga ut"/>
+        </form>
+    </div>
+    
+    <h3>Manager Information</h3>
+    <div th:each="info : ${managerInfo}">
+        <h4 th:text="${info.title}"></h4>
+        <p th:text="${info.infoText}"></p>
+    </div>
+</body>
+</html> 

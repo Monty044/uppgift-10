@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registrera ny användare</title>
+</head>
+<body>
+    <h2>Registrera ny användare</h2>
+    <form th:action="@{/register}" method="post">
+        <div>
+            <label>Användarnamn: <input type="text" name="username" required/></label>
+        </div>
+        <div>
+            <label>Lösenord: <input type="password" name="password" required/></label>
+        </div>
+        <div>
+            <label>Roll:
+                <select name="role" required>
+                    <option value="USER">Användare</option>
+                    <option value="ADMIN">Admin</option>
+                    <option value="MANAGER">Manager</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Registrera"/>
+        </div>
+    </form>
+</body>
+</html> 
