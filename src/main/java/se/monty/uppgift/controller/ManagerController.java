@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import se.monty.uppgift.service.ManagerService;
 
-/**
- * Controller för manager-funktioner
- */
+
 @Controller
 @RequestMapping("/manager")
 public class ManagerController {
@@ -19,8 +17,8 @@ public class ManagerController {
 
     /**
      * Visar manager-dashboard
-     * @param model Model för att skicka data till vyn
-     * @return sökväg till manager-vyn
+     * @param model
+     * @return
      */
     @GetMapping
     public String showManagerDashboard(Model model) {

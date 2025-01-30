@@ -31,7 +31,7 @@ public class ApplicationUser {
      */
     private String role;
 
-    // Tom konstruktor är bra att ha för JPA
+
     public ApplicationUser() {
     }
 
@@ -42,7 +42,7 @@ public class ApplicationUser {
         this.role = role;
     }
 
-    // Getter- och setter-metoder
+
     public Long getId() {
         return id;
     }

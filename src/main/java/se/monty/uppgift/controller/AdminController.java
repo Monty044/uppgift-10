@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import se.monty.uppgift.service.AdminService;
 
-/**
- * Controller för administrativa funktioner
- */
+
 @Controller
 @RequestMapping("/admin")
 public class AdminController {
@@ -18,9 +16,9 @@ public class AdminController {
     private AdminService adminService;
 
     /**
-     * Visar administrativa dokument
-     * @param model Model för att skicka data till vyn
-     * @return sökväg till admin-vyn
+
+     @param model
+     @return
      */
     @GetMapping
     public String showAdminDashboard(Model model) {

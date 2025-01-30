@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import se.monty.uppgift.service.UserService;
 
-/**
- * Controller för användarregistrering
- */
+
 @Controller
 public class RegistrationController {
 
