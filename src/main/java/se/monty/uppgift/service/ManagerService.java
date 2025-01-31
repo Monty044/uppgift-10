@@ -11,10 +11,7 @@ import java.util.List;
 @Component
 public class ManagerService {
     
-    /**
-     * Hämtar en lista med information för managers
-     * @return List<ManagerInfo> lista med manager-information
-     */
+
     public List<ManagerInfo> getManagerInfo() {
         List<ManagerInfo> infoList = new ArrayList<>();
         infoList.add(new ManagerInfo("Projektöversikt", "Status för pågående projekt"));

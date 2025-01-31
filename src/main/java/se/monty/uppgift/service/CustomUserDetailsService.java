@@ -12,9 +12,7 @@ import se.monty.uppgift.repository.ApplicationUserRepository;
 
 import java.util.Collections;
 
-/**
- * Service för att ladda användardetaljer för Spring Security
- */
+
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 

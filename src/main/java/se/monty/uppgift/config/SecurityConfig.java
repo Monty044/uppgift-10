@@ -10,10 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import se.monty.uppgift.service.CustomUserDetailsService;
 
-/**
- * Säkerhetskonfiguration för applikationen.
- * Hanterar behörigheter och autentisering.
- */
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -21,9 +18,7 @@ public class SecurityConfig {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
-    /**
-     * Konfigurerar säkerhetsregler för olika URL:er i applikationen
-     */
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -48,9 +43,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-    /**
-     * Skapar en PasswordEncoder för säker hantering av lösenord
-     */
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

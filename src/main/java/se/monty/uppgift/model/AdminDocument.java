@@ -1,8 +1,6 @@
 package se.monty.uppgift.model;
 
-/**
- * Klass som representerar administrativa dokument i systemet.
- */
+
 public class AdminDocument {
     private String title;
     private String description;

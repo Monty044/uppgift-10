@@ -15,11 +15,7 @@ public class ManagerController {
     @Autowired
     private ManagerService managerService;
 
-    /**
-     * Visar manager-dashboard
-     * @param model
-     * @return
-     */
+
     @GetMapping
     public String showManagerDashboard(Model model) {
         model.addAttribute("managerInfo", managerService.getManagerInfo());

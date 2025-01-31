@@ -15,11 +15,7 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    /**
 
-     @param model
-     @return
-     */
     @GetMapping
     public String showAdminDashboard(Model model) {
         model.addAttribute("documents", adminService.getAdminDocuments());

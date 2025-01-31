@@ -1,8 +1,6 @@
 package se.monty.uppgift.model;
 
-/**
- * Klass som representerar information specifik för managers.
- */
+
 public class ManagerInfo {
     private String title;
     private String infoText;
